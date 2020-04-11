@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Examination System</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <form class="regForm">
+                <h2 class="header">Please enter your data to register: </h2>
+                <div class="input"><span class="caption">Full Name</span><input type="text" class="input-box" id="fullname"></div>
+                <div class="input"><span class="caption">Email</span><input type="email" class="input-box" id="email"></div>
+                <div class="input"><span class="caption">Password</span><input type="password" class="input-box" id="password"></div>
+                <div class="input"><span class="caption">Confirm Password</span><input type="password" class="input-box" id="confirmPass"></div>
+                <div class="input"><input type="radio" name="gender" value="female" class="radio-input" checked="checked" id="female"><span class="caption">Female</span></div>
+                <div class="input"><input type="radio" name="gender" value="male" class="radio-input"><span class="caption" id="male">Male</span></div>
+                <div class="submit" id="submit">Register</div>
+            </form>
+        </div>
+        <div class="login">
+            <form class="regForm">
+                <h2 class="header">Please enter your Email and Password: </h2>
+                <div class="input"><span class="caption">Email</span><input type="email" class="input-box" id="log-email"></div>
+                <div class="input"><span class="caption">Password</span><input type="password" class="input-box" id="log-pass"></div>
+                <div class="login-btn" id="login">Login</div>
+            </form>
+        </div>
+        <div class="exam-cont">
+            <div class="exam">
+                <div class="question">
+                    <h3 class="question-body">
+                        1) Whats your name?
+                    </h3>
+                    <div class="answer"><input type="radio" name="answer" value="first" class="radio-input"><span class="answer-body">First</span></div>
+                    <div class="answer"><input type="radio" name="answer" value="second" class="radio-input"><span class="answer-body">Second</span></div>
+                    <div class="answer"><input type="radio" name="answer" value="third" class="radio-input"><span class="answer-body">Third</span></div>
+                    <div class="answer"><input type="radio" name="answer" value="fourth" class="radio-input"><span class="answer-body">Fourth</span></div>
+                    <div class="btns">
+                        <div class="next-btn" id="next-btn">Next</div>
+                        <div class="skip-btn" id="skip-btn">Skip</div>
+                        <div class="finish-btn" id="finish-btn">Finish</div>
+                    </div>
+                </div>
+            </div>
+            <div class="side-bar">
+                <h3 class="skip-header">Skipped Questions</h3>
+                <p id="side-bar__body"></p>
+            </div>
+        </div>
+
+        <div class="result">
+            <h3>Your Result: </h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
